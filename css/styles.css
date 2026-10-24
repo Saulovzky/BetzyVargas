@@ -283,7 +283,7 @@ h3 { font-size: 1.3rem; }
   .hero__text { padding: 2.5rem 1.25rem 3rem; }
 
   .evid, .about, .contact { grid-template-columns: 1fr; }
-  .evid__figure { max-width: 460px; }
+  .evid__figure { max-width: 460px; margin-inline: auto; }
 
   .svc { grid-template-columns: 1fr; }
   .svc__tabs { display: flex; gap: .5rem; overflow-x: auto; scroll-snap-type: x proximity; margin-inline: -1.25rem; padding: 0 1.25rem .5rem; scrollbar-width: thin; }

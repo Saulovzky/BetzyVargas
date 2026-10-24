@@ -37,40 +37,43 @@
         if (key && map[key]) map[key].setAttribute('aria-current', 'true');
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
-    $$('main section[id]').forEach(function (s) { spy.observe(s); });
+    $$('main > section[id]').forEach(function (s) { spy.observe(s); });
   }
 
   /* ---------- Servicios: pestañas ---------- */
   var tabs = $$('.svc__tab');
   var panels = $$('.svc__panel');
-  function select(key, focus) {
+  var tabRow = $('.svc__tabs');
+  // center = true solo tras una acción de la persona; mueve únicamente la fila
+  // de pestañas (en móvil es horizontal), nunca desplaza la página.
+  function select(key, focus, center) {
     tabs.forEach(function (t) {
       var on = t.getAttribute('data-key') === key;
       t.setAttribute('aria-selected', String(on));
       t.tabIndex = on ? 0 : -1;
-      if (on && focus) t.focus();
-      if (on && t.scrollIntoView && window.matchMedia('(max-width: 860px)').matches) {
-        t.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+      if (on && focus) t.focus({ preventScroll: true });
+      if (on && center && tabRow.scrollWidth > tabRow.clientWidth) {
+        tabRow.scrollTo({ left: t.offsetLeft - (tabRow.clientWidth - t.offsetWidth) / 2, behavior: 'smooth' });
       }
     });
     panels.forEach(function (p) { p.hidden = p.id !== 'panel-' + key; });
   }
   tabs.forEach(function (t, i) {
-    t.addEventListener('click', function () { select(t.getAttribute('data-key')); });
+    t.addEventListener('click', function () { select(t.getAttribute('data-key'), false, true); });
     t.addEventListener('keydown', function (e) {
       var next = null;
       if (e.key === 'ArrowDown' || e.key === 'ArrowRight') next = tabs[(i + 1) % tabs.length];
       if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') next = tabs[(i - 1 + tabs.length) % tabs.length];
       if (e.key === 'Home') next = tabs[0];
       if (e.key === 'End') next = tabs[tabs.length - 1];
-      if (next) { e.preventDefault(); select(next.getAttribute('data-key'), true); }
+      if (next) { e.preventDefault(); select(next.getAttribute('data-key'), true, true); }
     });
   });
   if (tabs.length) select('peritaje');
 
   // Accesos por situación (hero): abren el servicio indicado
   $$('[data-svc]').forEach(function (a) {
-    a.addEventListener('click', function () { select(a.getAttribute('data-svc')); });
+    a.addEventListener('click', function () { select(a.getAttribute('data-svc'), false, true); });
   });
 
   // "Consultar este servicio": preselecciona el formulario
