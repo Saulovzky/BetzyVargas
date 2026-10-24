@@ -11,13 +11,12 @@ js/main.js
 assets/
   betzy.jpg              foto principal (1125 px)
   betzy-640.jpg          versión ligera para móvil
-  CV_Betzy_Vargas_Lara.pdf
 .nojekyll
 ```
 
 ## Publicar en GitHub Pages
 
-1. Crea un repositorio nuevo en GitHub (por ejemplo `betzyvargas`).
+1. Crea un repositorio nuevo en GitHub (por ejemplo `BetzyVargas`).
 2. Sube **el contenido de esta carpeta** a la raíz del repositorio (`index.html` debe quedar en la raíz).
 3. En el repositorio: **Settings → Pages → Build and deployment**.
 4. En *Source* elige **Deploy from a branch**, rama `main`, carpeta `/ (root)` y guarda.
