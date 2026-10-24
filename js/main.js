@@ -23,7 +23,7 @@
   var map = {};
   links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
   // las secciones sin enlace propio se asocian a la más cercana
-  var alias = { evidencia: null, impacto: "metodo", inicio: null };
+  var alias = { evidencia: null, inicio: null };
   if ('IntersectionObserver' in window) {
     var current = null;
     var spy = new IntersectionObserver(function (entries) {
