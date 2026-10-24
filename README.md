@@ -30,8 +30,8 @@ Crea un archivo `CNAME` en la raíz con el dominio (por ejemplo `betzyvargas.com
 
 ## Cómo editar
 
-- **Textos y servicios:** `index.html`.
-- **Colores y tipografías:** variables al inicio de `css/styles.css` (`--navy-*`, `--gold`, `--serif`, `--sans`).
+- **Textos y servicios:** `index.html`. Cada servicio es un bloque `svc__panel` (con su pestaña `svc__tab`); si cambias el nombre, actualiza también la opción del formulario.
+- **Colores y tipografías:** variables al inicio de `css/styles.css` (`--ink`, `--paper`, `--uv`, `--sans`, `--serif`).
 - **Foto:** reemplaza `assets/betzy.jpg` y `assets/betzy-640.jpg` conservando los nombres.
 - **Formulario:** abre el correo del visitante con el mensaje redactado (no requiere servidor). Si luego quieres recibir mensajes directo, se puede conectar a Formspree o similar cambiando el `submit` en `js/main.js`.
 

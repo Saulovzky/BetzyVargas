@@ -6,9 +6,8 @@
   <title>Betzy Vargas Lara | Peritaje, investigación digital y prevención del fraude</title>
   <meta name="description" content="Betzy Vargas Lara: perito documental y analista de inteligencia e investigación. Peritaje, OSINT, prevención del fraude y consultoría para empresas, despachos e instituciones.">
   <meta name="author" content="Betzy Vargas Lara">
-  <meta name="theme-color" content="#121c3a">
+  <meta name="theme-color" content="#0e1a33">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
   <meta property="og:title" content="Betzy Vargas Lara | Peritaje, investigación digital y prevención del fraude">
@@ -16,12 +15,13 @@
   <meta property="og:image" content="assets/betzy-640.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121c3a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23c9a24d'%3EBV%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1a33'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='%23b5a9ff'%3EBV%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
 
   <script type="application/ld+json">
   {
@@ -53,11 +53,11 @@
       </a>
 
       <nav class="nav__links" id="menu" aria-label="Principal">
-        <a href="#sobre-mi">Sobre mí</a>
         <a href="#servicios">Servicios</a>
-        <a href="#metodo">Cómo trabajo</a>
-        <a href="#impacto">Impacto</a>
-        <a class="btn btn--gold btn--sm nav__cta" href="#contacto">Hablemos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#metodo">Método</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn--uv btn--sm nav__cta" href="https://wa.me/525621401505" target="_blank" rel="noopener">WhatsApp</a>
       </nav>
 
       <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
@@ -69,188 +69,308 @@
   <main id="contenido">
 
     <!-- ============ HERO ============ -->
-    <section class="hero" id="inicio">
-      <div class="wrap hero__grid">
-        <div class="hero__copy">
-          <p class="eyebrow reveal">Peritaje · Investigación digital · Prevención del fraude</p>
-          <h1 class="reveal">Verifico lo que otros <em>dan por cierto.</em></h1>
-          <p class="lead reveal">
-            Soy Betzy Vargas Lara. Ayudo a empresas, despachos e instituciones a detectar
-            falsificaciones, fraudes digitales y riesgos antes de que se conviertan en pérdidas.
+    <section class="hero" id="inicio" aria-labelledby="h-hero">
+      <div class="hero__text">
+        <div class="hero__stack">
+          <h1 id="h-hero" class="in" style="--d:0">Verifico lo que otros dan por cierto.</h1>
+          <p class="hero__lead in" style="--d:1">
+            Perito documental y analista de inteligencia e investigación. Ayudo a empresas, despachos
+            e instituciones a detectar falsificaciones, fraudes digitales y riesgos antes de que cuesten dinero.
           </p>
-          <div class="hero__actions reveal">
-            <a class="btn btn--navy" href="#servicios">Conocer servicios</a>
-            <a class="btn btn--ghost" href="#contacto">Contarme tu caso</a>
-          </div>
-        </div>
 
-        <figure class="hero__photo reveal">
-          <div class="hero__frame">
-            <img src="assets/betzy.jpg"
-                 srcset="assets/betzy-640.jpg 640w, assets/betzy.jpg 1125w"
-                 sizes="(max-width: 860px) 80vw, 460px"
-                 width="1125" height="1235"
-                 alt="Retrato de Betzy Vargas Lara, con saco azul marino y blusa blanca"
-                 fetchpriority="high">
+          <div class="hero__ctas in" style="--d:2">
+            <a class="btn btn--light" href="https://wa.me/525621401505" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+            <a class="btn btn--outline-light" href="#servicios">Ver servicios</a>
           </div>
-          <figcaption class="hero__badge">
-            <span>Perito documental</span>
-            <strong>Analista de inteligencia</strong>
-          </figcaption>
-        </figure>
+
+          <nav class="situations in" style="--d:3" aria-labelledby="h-sit">
+            <h2 id="h-sit">¿Cuál es tu situación?</h2>
+            <ul>
+              <li><a href="#servicios" data-svc="peritaje">Dudo de la autenticidad de un documento</a></li>
+              <li><a href="#servicios" data-svc="ciber">Sospecho de un fraude o una suplantación digital</a></li>
+              <li><a href="#servicios" data-svc="fraude">Quiero proteger a mi empresa del fraude</a></li>
+              <li><a href="#servicios" data-svc="formacion">Necesito capacitar a mi equipo</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
 
-      <!-- sello de confianza (una línea, no un currículum) -->
+      <figure class="hero__media in" style="--d:1">
+        <img src="assets/betzy.jpg"
+             srcset="assets/betzy-640.jpg 640w, assets/betzy.jpg 1125w"
+             sizes="(max-width: 860px) 100vw, 46vw"
+             width="1125" height="1235"
+             alt="Retrato de Betzy Vargas Lara, con saco azul marino y blusa blanca"
+             fetchpriority="high">
+        <figcaption class="hero__name">
+          <strong>Betzy Vargas Lara</strong>
+          <span>Perito documental, MCH Abogados</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ EVIDENCIA (demostración) ============ -->
+    <section class="block block--paper" id="evidencia" aria-labelledby="h-evid">
+      <div class="wrap evid">
+        <div class="evid__copy">
+          <h2 id="h-evid">Una cifra, una firma o una fecha pueden alterarse sin que se note.</h2>
+          <p>
+            El peritaje documental lo comprueba con magnificación, luz especial y comparación de trazos.
+            Pasa la lupa por el documento de ejemplo para ver qué revela.
+          </p>
+          <dl class="findings">
+            <div>
+              <dt>Cifras alteradas</dt>
+              <dd>Un dígito añadido o retocado cambia el monto de un contrato.</dd>
+            </div>
+            <div>
+              <dt>Firmas con trazos superpuestos</dt>
+              <dd>El análisis de trazos distingue una firma original de una imitación.</dd>
+            </div>
+            <div>
+              <dt>Tintas distintas</dt>
+              <dd>Dos bolígrafos pueden verse iguales a simple vista y no con la luz adecuada.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="evid__figure">
+          <div class="specimen" id="specimen" tabindex="0" role="img"
+               aria-label="Documento de ejemplo con una lupa. Bajo la lupa se ven tres alteraciones: una cifra modificada, una firma con trazo superpuesto y una fecha escrita con otra tinta. Usa las flechas del teclado para mover la lupa.">
+
+            <!-- capa 1: documento a simple vista -->
+            <svg class="spec spec--plain" viewBox="0 0 480 600" aria-hidden="true" focusable="false">
+              <rect width="480" height="600" fill="#fdfcf8"/>
+              <g fill="#5c6579" opacity=".5">
+                <rect x="40" y="44" width="190" height="12" rx="2"/>
+                <rect x="40" y="92" width="400" height="6" rx="2"/><rect x="40" y="108" width="380" height="6" rx="2"/>
+                <rect x="40" y="124" width="400" height="6" rx="2"/><rect x="40" y="140" width="330" height="6" rx="2"/>
+                <rect x="40" y="172" width="400" height="6" rx="2"/><rect x="40" y="188" width="390" height="6" rx="2"/>
+                <rect x="40" y="204" width="250" height="6" rx="2"/>
+                <rect x="40" y="396" width="400" height="6" rx="2"/><rect x="40" y="412" width="300" height="6" rx="2"/>
+              </g>
+              <g font-family="Georgia, serif" fill="#2a3042">
+                <text x="40" y="252" font-size="16">Monto</text>
+                <text x="150 164 177 190 203 210 223 236 249 256 269" y="252" font-size="22">$180,000.00</text>
+                <text x="40" y="346" font-size="16">Fecha</text>
+                <text x="110 122 134 142 154 166 174 186 198 210" y="346" font-size="18">12/03/2024</text>
+              </g>
+              <line x1="40" y1="530" x2="250" y2="530" stroke="#2a3042" stroke-width="1" opacity=".5"/>
+              <g fill="none" stroke="#1d3a94" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M60 505 C80 470 100 540 120 500 S160 470 175 510 S205 525 230 495" stroke-width="2.2"/>
+                <path d="M70 498 C95 520 125 470 150 505 S190 530 220 490" stroke-width="2.2" opacity=".85"/>
+              </g>
+              <text x="40" y="578" font-family="Arial, sans-serif" font-size="11" fill="#7a8398">Documento de ejemplo, datos ficticios</text>
+            </svg>
+
+            <!-- capa 2: luz especial, visible solo bajo la lupa -->
+            <svg class="spec spec--uv" viewBox="0 0 480 600" aria-hidden="true" focusable="false">
+              <rect width="480" height="600" fill="#150f3b"/>
+              <g fill="#8d84d6" opacity=".45">
+                <rect x="40" y="44" width="190" height="12" rx="2"/>
+                <rect x="40" y="92" width="400" height="6" rx="2"/><rect x="40" y="108" width="380" height="6" rx="2"/>
+                <rect x="40" y="124" width="400" height="6" rx="2"/><rect x="40" y="140" width="330" height="6" rx="2"/>
+                <rect x="40" y="172" width="400" height="6" rx="2"/><rect x="40" y="188" width="390" height="6" rx="2"/>
+                <rect x="40" y="204" width="250" height="6" rx="2"/>
+                <rect x="40" y="396" width="400" height="6" rx="2"/><rect x="40" y="412" width="300" height="6" rx="2"/>
+              </g>
+              <g font-family="Georgia, serif" fill="#c9c3f5">
+                <text x="40" y="252" font-size="16">Monto</text>
+                <text x="150 164 177 190 203 210 223 236 249 256 269" y="252" font-size="22">$180,000.00</text>
+                <text x="40" y="346" font-size="16">Fecha</text>
+                <text x="110 122 134 142 154 166 174 186 198 210" y="346" font-size="18">12/03/2024</text>
+              </g>
+              <line x1="40" y1="530" x2="250" y2="530" stroke="#c9c3f5" stroke-width="1" opacity=".4"/>
+              <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M60 505 C80 470 100 540 120 500 S160 470 175 510 S205 525 230 495" stroke="#7f8cff" stroke-width="2.4"/>
+                <path d="M70 498 C95 520 125 470 150 505 S190 530 220 490" stroke="#ff8ad8" stroke-width="2.6"/>
+              </g>
+              <!-- marcas de hallazgo -->
+              <g fill="none" stroke="#ff8ad8" stroke-width="2">
+                <rect x="160" y="230" width="20" height="30" rx="3"/>
+                <rect x="182" y="326" width="56" height="26" rx="3"/>
+                <ellipse cx="146" cy="500" rx="96" ry="34" stroke-dasharray="5 4"/>
+              </g>
+              <g font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffd2f1">
+                <text x="150" y="280">Cifra modificada</text>
+                <text x="182" y="372">Tinta distinta</text>
+                <text x="70" y="556">Trazo superpuesto</text>
+              </g>
+            </svg>
+
+            <span class="lens" aria-hidden="true"></span>
+          </div>
+          <figcaption>Documento de ejemplo con datos ficticios. Arrastra la lupa o usa las flechas del teclado.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="block" id="servicios" aria-labelledby="h-serv">
       <div class="wrap">
-        <p class="trust reveal">
-          <span>Máster en Cibercriminalidad · Salamanca</span>
-          <i aria-hidden="true"></i>
-          <span>Grafoscopía y Documentoscopía</span>
-          <i aria-hidden="true"></i>
-          <span>Licenciada en Criminalística</span>
-        </p>
+        <div class="head">
+          <h2 id="h-serv">Servicios profesionales</h2>
+          <p>Elige el área que se parece a tu caso. Si no estás seguro, escríbeme y lo definimos juntos.</p>
+        </div>
+
+        <div class="svc" id="svc">
+          <div class="svc__tabs" role="tablist" aria-orientation="vertical" aria-label="Áreas de servicio">
+            <p class="svc__group" aria-hidden="true">Para verificar</p>
+            <button class="svc__tab" role="tab" id="tab-peritaje" aria-controls="panel-peritaje" aria-selected="true" data-key="peritaje">Criminalística y peritaje</button>
+            <button class="svc__tab" role="tab" id="tab-ciber" aria-controls="panel-ciber" aria-selected="false" tabindex="-1" data-key="ciber">Cibercriminalidad e investigación digital</button>
+
+            <p class="svc__group" aria-hidden="true">Para prevenir</p>
+            <button class="svc__tab" role="tab" id="tab-fraude" aria-controls="panel-fraude" aria-selected="false" tabindex="-1" data-key="fraude">Prevención del fraude</button>
+            <button class="svc__tab" role="tab" id="tab-consultoria" aria-controls="panel-consultoria" aria-selected="false" tabindex="-1" data-key="consultoria">Consultoría empresarial</button>
+
+            <p class="svc__group" aria-hidden="true">Para formar e impactar</p>
+            <button class="svc__tab" role="tab" id="tab-formacion" aria-controls="panel-formacion" aria-selected="false" tabindex="-1" data-key="formacion">Formación y capacitación</button>
+            <button class="svc__tab" role="tab" id="tab-impacto-social" aria-controls="panel-impacto-social" aria-selected="false" tabindex="-1" data-key="impacto-social">Innovación e impacto social</button>
+          </div>
+
+          <div class="svc__panels">
+            <section class="svc__panel" role="tabpanel" id="panel-peritaje" aria-labelledby="tab-peritaje" data-name="Criminalística y peritaje">
+              <h3>Criminalística y peritaje</h3>
+              <ul>
+                <li>Grafoscopía y documentoscopía</li>
+                <li>Dictámenes e informes periciales</li>
+                <li>Asesoría técnica pericial</li>
+              </ul>
+              <button class="btn btn--ink" type="button" data-consult="Criminalística y peritaje">Consultar este servicio</button>
+            </section>
+
+            <section class="svc__panel" role="tabpanel" id="panel-ciber" aria-labelledby="tab-ciber" data-name="Cibercriminalidad e investigación digital">
+              <h3>Cibercriminalidad e investigación digital</h3>
+              <ul>
+                <li>Investigación OSINT</li>
+                <li>Análisis de fraudes digitales</li>
+                <li>Preservación y análisis preliminar de evidencia digital</li>
+              </ul>
+              <button class="btn btn--ink" type="button" data-consult="Cibercriminalidad e investigación digital">Consultar este servicio</button>
+            </section>
+
+            <section class="svc__panel" role="tabpanel" id="panel-fraude" aria-labelledby="tab-fraude" data-name="Prevención del fraude">
+              <h3>Prevención del fraude</h3>
+              <ul>
+                <li>Fraude documental y suplantación de identidad</li>
+                <li>Evaluación de riesgos empresariales</li>
+                <li>Protocolos de prevención</li>
+              </ul>
+              <button class="btn btn--ink" type="button" data-consult="Prevención del fraude">Consultar este servicio</button>
+            </section>
+
+            <section class="svc__panel" role="tabpanel" id="panel-consultoria" aria-labelledby="tab-consultoria" data-name="Consultoría empresarial">
+              <h3>Consultoría empresarial</h3>
+              <ul>
+                <li>Inteligencia e investigación corporativa</li>
+                <li>Análisis de riesgos digitales</li>
+                <li>Asesoría en prevención del fraude</li>
+              </ul>
+              <button class="btn btn--ink" type="button" data-consult="Consultoría empresarial">Consultar este servicio</button>
+            </section>
+
+            <section class="svc__panel" role="tabpanel" id="panel-formacion" aria-labelledby="tab-formacion" data-name="Formación y capacitación">
+              <h3>Formación y capacitación</h3>
+              <ul>
+                <li>Cursos y talleres especializados</li>
+                <li>Conferencias sobre criminalística y cibercriminalidad</li>
+                <li>Educación en seguridad digital</li>
+              </ul>
+              <button class="btn btn--ink" type="button" data-consult="Formación y capacitación">Consultar este servicio</button>
+            </section>
+
+            <section class="svc__panel" role="tabpanel" id="panel-impacto-social" aria-labelledby="tab-impacto-social" data-name="Innovación e impacto social">
+              <h3>Innovación e impacto social</h3>
+              <ul>
+                <li>Proyectos de prevención de delitos digitales</li>
+                <li>Alfabetización y cultura digital</li>
+                <li>Colaboración con instituciones y organizaciones</li>
+              </ul>
+              <button class="btn btn--ink" type="button" data-consult="Innovación e impacto social">Consultar este servicio</button>
+            </section>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ============ SOBRE MÍ ============ -->
-    <section class="section section--cream" id="sobre-mi">
+    <section class="block block--paper" id="sobre-mi" aria-labelledby="h-about">
       <div class="wrap about">
-        <div class="about__head">
-          <p class="eyebrow">Sobre mí</p>
-          <h2>Rigor pericial, <em>mirada de inteligencia.</em></h2>
-        </div>
-
-        <div class="about__body">
-          <p class="big">
-            Un documento puede parecer auténtico y no serlo. Un perfil puede parecer real y no existir.
-            Mi trabajo es comprobarlo.
-          </p>
+        <div class="about__story">
+          <h2 id="h-about">Un documento puede parecer auténtico y no serlo. Un perfil puede parecer real y no existir.</h2>
+          <p class="about__lead">Mi trabajo es comprobarlo.</p>
           <p>
             Mi base está en la criminalística y hoy se extiende a la cibercriminalidad: del estudio
             grafoscópico y documentoscópico a la investigación en fuentes abiertas. Cada análisis
             puede sostener una decisión judicial o empresarial, por eso trabajo con precisión,
             discreción y criterio.
           </p>
+          <p>
+            Me apoyo en OSINT, SOCMINT, inteligencia artificial asistencial, microscopio y cámara forense.
+          </p>
         </div>
 
-        <ul class="principles">
-          <li class="reveal">
-            <span class="principles__n">01</span>
-            <h3>Verificar antes de concluir</h3>
-            <p>Cada hallazgo se contrasta. Sin suposiciones, sin atajos.</p>
+        <aside class="about__proof" aria-label="Formación y experiencia que respaldan mi trabajo">
+          <h3>Lo que respalda mi trabajo</h3>
+          <dl>
+            <div>
+              <dt>Máster en Cibercriminalidad</dt>
+              <dd>Universidad de Salamanca</dd>
+            </div>
+            <div>
+              <dt>Especialidad en Grafoscopía, Documentoscopía, Dactiloscopía y Grafología</dt>
+              <dd>INJUPEF</dd>
+            </div>
+            <div>
+              <dt>Licenciatura en Criminalística</dt>
+              <dd>Con título y cédula profesional</dd>
+            </div>
+            <div>
+              <dt>Perito documental</dt>
+              <dd>MCH Abogados, prevención de fraudes y falsificaciones</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <ul class="about__values">
+          <li>
+            <h3>Verifico antes de concluir</h3>
+            <p>Cada hallazgo se contrasta. Sin suposiciones ni atajos.</p>
           </li>
-          <li class="reveal">
-            <span class="principles__n">02</span>
-            <h3>Discreción absoluta</h3>
+          <li>
+            <h3>Guardo absoluta discreción</h3>
             <p>La información sensible se maneja con estricta confidencialidad.</p>
           </li>
-          <li class="reveal">
-            <span class="principles__n">03</span>
-            <h3>Prevenir antes que reparar</h3>
+          <li>
+            <h3>Prefiero prevenir</h3>
             <p>Mi objetivo es que el problema no llegue, no solo explicarlo cuando ya ocurrió.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- ============ SERVICIOS ============ -->
-    <section class="section section--navy" id="servicios">
+    <!-- ============ MÉTODO ============ -->
+    <section class="block" id="metodo" aria-labelledby="h-metodo">
       <div class="wrap">
-        <div class="section__head section__head--light">
-          <p class="eyebrow eyebrow--gold">Servicios profesionales</p>
-          <h2>Seis áreas, un mismo estándar de precisión.</h2>
-        </div>
-
-        <div class="services">
-          <article class="svc reveal">
-            <span class="svc__n">01</span>
-            <h3>Criminalística y peritaje</h3>
-            <ul>
-              <li>Grafoscopía y documentoscopía</li>
-              <li>Dictámenes e informes periciales</li>
-              <li>Asesoría técnica pericial</li>
-            </ul>
-          </article>
-
-          <article class="svc reveal">
-            <span class="svc__n">02</span>
-            <h3>Cibercriminalidad e investigación digital</h3>
-            <ul>
-              <li>Investigación OSINT</li>
-              <li>Análisis de fraudes digitales</li>
-              <li>Preservación y análisis preliminar de evidencia digital</li>
-            </ul>
-          </article>
-
-          <article class="svc reveal">
-            <span class="svc__n">03</span>
-            <h3>Prevención del fraude</h3>
-            <ul>
-              <li>Fraude documental y suplantación de identidad</li>
-              <li>Evaluación de riesgos empresariales</li>
-              <li>Protocolos de prevención</li>
-            </ul>
-          </article>
-
-          <article class="svc reveal">
-            <span class="svc__n">04</span>
-            <h3>Consultoría empresarial</h3>
-            <ul>
-              <li>Inteligencia e investigación corporativa</li>
-              <li>Análisis de riesgos digitales</li>
-              <li>Asesoría en prevención del fraude</li>
-            </ul>
-          </article>
-
-          <article class="svc reveal">
-            <span class="svc__n">05</span>
-            <h3>Formación y capacitación</h3>
-            <ul>
-              <li>Cursos y talleres especializados</li>
-              <li>Conferencias sobre criminalística y cibercriminalidad</li>
-              <li>Educación en seguridad digital</li>
-            </ul>
-          </article>
-
-          <article class="svc reveal">
-            <span class="svc__n">06</span>
-            <h3>Innovación e impacto social</h3>
-            <ul>
-              <li>Proyectos de prevención de delitos digitales</li>
-              <li>Alfabetización y cultura digital</li>
-              <li>Colaboración con instituciones y organizaciones</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CÓMO TRABAJO ============ -->
-    <section class="section" id="metodo">
-      <div class="wrap">
-        <div class="section__head">
-          <p class="eyebrow">Cómo trabajo</p>
-          <h2>Un proceso claro, de la primera llamada al resultado.</h2>
+        <div class="head">
+          <h2 id="h-metodo">De la primera conversación al resultado</h2>
+          <p>Un proceso claro en cuatro pasos, para que sepas qué esperar en cada etapa.</p>
         </div>
 
         <ol class="steps">
-          <li class="reveal">
-            <span class="steps__n">1</span>
+          <li>
             <h3>Conversación confidencial</h3>
             <p>Entiendo tu caso, qué está en juego y qué necesitas decidir.</p>
           </li>
-          <li class="reveal">
-            <span class="steps__n">2</span>
+          <li>
             <h3>Análisis y verificación</h3>
             <p>Estudio documentos, firmas, identidades y rastros digitales con método.</p>
           </li>
-          <li class="reveal">
-            <span class="steps__n">3</span>
+          <li>
             <h3>Resultados que se entienden</h3>
             <p>Un dictamen, informe o protocolo preciso, listo para usarse.</p>
           </li>
-          <li class="reveal">
-            <span class="steps__n">4</span>
+          <li>
             <h3>Prevención a futuro</h3>
             <p>Controles y buenas prácticas para que no se repita.</p>
           </li>
@@ -259,42 +379,38 @@
     </section>
 
     <!-- ============ IMPACTO ============ -->
-    <section class="impact" id="impacto">
+    <section class="impact" id="impacto" aria-labelledby="h-impacto">
       <div class="wrap impact__inner">
-        <p class="eyebrow eyebrow--gold">Impacto social</p>
-        <blockquote class="impact__quote">
-          La prevención del fraude no debería ser un privilegio de las empresas.
-        </blockquote>
-        <p class="impact__text">
-          Llevo talleres de prevención de fraudes tecnológicos a personas vulnerables, junto con Cáritas,
-          y asesoro en metodología de investigación criminal. Porque la cultura digital también protege.
+        <h2 id="h-impacto" class="impact__quote">La prevención del fraude no debería ser un privilegio de las empresas.</h2>
+        <p>
+          Imparto talleres de prevención de fraudes tecnológicos para personas vulnerables, junto con Cáritas,
+          y asesoro en metodología de investigación criminal. La cultura digital también protege.
         </p>
       </div>
     </section>
 
     <!-- ============ CONTACTO ============ -->
-    <section class="section section--cream" id="contacto">
+    <section class="block block--paper" id="contacto" aria-labelledby="h-contacto">
       <div class="wrap contact">
         <div class="contact__intro">
-          <p class="eyebrow">Contacto</p>
-          <h2>Hablemos de tu caso.</h2>
-          <p class="lead lead--dark">
-            Cuéntame brevemente qué necesitas verificar, investigar o prevenir. Toda la información se trata con estricta confidencialidad.
+          <h2 id="h-contacto">Cuéntame tu caso</h2>
+          <p>
+            Dime qué necesitas verificar, investigar o prevenir. Toda la información se trata con estricta confidencialidad.
           </p>
 
-          <ul class="contact__list">
-            <li>
-              <span>Correo</span>
-              <a href="mailto:betvargas81@gmail.com">betvargas81@gmail.com</a>
-            </li>
-            <li>
-              <span>Teléfono / WhatsApp</span>
-              <a href="https://wa.me/525621401505" target="_blank" rel="noopener">56 2140 1505</a>
-            </li>
-          </ul>
+          <div class="contact__actions">
+            <a class="btn btn--uv" href="https://wa.me/525621401505" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+            <a class="btn btn--outline" href="mailto:betvargas81@gmail.com">Enviar un correo</a>
+          </div>
+
+          <dl class="contact__list">
+            <div><dt>Correo</dt><dd><a href="mailto:betvargas81@gmail.com">betvargas81@gmail.com</a></dd></div>
+            <div><dt>Teléfono</dt><dd><a href="tel:+525621401505">56 2140 1505</a></dd></div>
+          </dl>
         </div>
 
         <form class="form" id="form" novalidate>
+          <h3>O déjame un mensaje</h3>
           <div class="field">
             <label for="nombre">Nombre</label>
             <input id="nombre" name="nombre" type="text" autocomplete="name" required>
@@ -319,7 +435,7 @@
             <label for="mensaje">Mensaje</label>
             <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
           </div>
-          <button class="btn btn--navy btn--block" type="submit">Enviar mensaje</button>
+          <button class="btn btn--ink btn--block" type="submit">Enviar mensaje</button>
           <p class="form__note" id="form-note" role="status">Se abrirá tu aplicación de correo con el mensaje listo para enviar.</p>
         </form>
       </div>
@@ -329,14 +445,20 @@
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="wrap footer__inner">
-      <div>
+      <div class="footer__id">
         <span class="brand__mark brand__mark--sm">BV</span>
         <strong>Betzy Vargas Lara</strong>
-        <span class="footer__role">Peritaje · Investigación · Prevención del fraude</span>
+        <span>Peritaje, investigación y prevención del fraude</span>
       </div>
       <p>© <span id="year">2026</span> Betzy Vargas Lara. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <!-- Barra de acción fija en móvil -->
+  <div class="dock" id="dock">
+    <a class="btn btn--uv" href="https://wa.me/525621401505" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn btn--outline-light" href="mailto:betvargas81@gmail.com">Correo</a>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
