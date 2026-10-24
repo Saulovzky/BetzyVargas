@@ -71,43 +71,41 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero" id="inicio" aria-labelledby="h-hero">
-      <div class="hero__text">
-        <div class="hero__stack">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
           <h1 id="h-hero" class="in" style="--d:0">Verifico lo que otros dan por cierto.</h1>
           <p class="hero__lead in" style="--d:1">
             Perito documental y analista de inteligencia e investigación. Ayudo a empresas, despachos
             e instituciones a detectar falsificaciones, fraudes digitales y riesgos antes de que cuesten dinero.
           </p>
-
           <div class="hero__ctas in" style="--d:2">
-            <a class="btn btn--light" href="https://wa.me/525621401505" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-            <a class="btn btn--outline-light" href="#servicios">Ver servicios</a>
+            <a class="btn btn--uv" href="https://wa.me/525621401505" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+            <a class="btn btn--outline" href="#servicios">Ver servicios</a>
           </div>
-
-          <nav class="situations in" style="--d:3" aria-labelledby="h-sit">
-            <h2 id="h-sit">¿Cuál es tu situación?</h2>
-            <ul>
-              <li><a href="#servicios" data-svc="peritaje">Dudo de la autenticidad de un documento</a></li>
-              <li><a href="#servicios" data-svc="ciber">Sospecho de un fraude o una suplantación digital</a></li>
-              <li><a href="#servicios" data-svc="fraude">Quiero proteger a mi empresa del fraude</a></li>
-              <li><a href="#impacto">Necesito capacitar a mi equipo</a></li>
-            </ul>
-          </nav>
         </div>
+
+        <figure class="hero__photo in" style="--d:1">
+          <img src="assets/betzy.jpg"
+               srcset="assets/betzy-640.jpg 640w, assets/betzy.jpg 1125w"
+               sizes="(max-width: 860px) 62vw, 380px"
+               width="1125" height="1235"
+               alt="Retrato de Betzy Vargas Lara, con saco azul marino y blusa blanca"
+               fetchpriority="high">
+          <figcaption class="hero__name">Betzy Vargas Lara</figcaption>
+        </figure>
       </div>
 
-      <figure class="hero__media in" style="--d:1">
-        <img src="assets/betzy.jpg"
-             srcset="assets/betzy-640.jpg 640w, assets/betzy.jpg 1125w"
-             sizes="(max-width: 860px) 78vw, 400px"
-             width="1125" height="1235"
-             alt="Retrato de Betzy Vargas Lara, con saco azul marino y blusa blanca"
-             fetchpriority="high">
-        <figcaption class="hero__name">
-          <strong>Betzy Vargas Lara</strong>
-          <span>Perito documental, MCH Abogados</span>
-        </figcaption>
-      </figure>
+      <nav class="situations" aria-labelledby="h-sit">
+        <div class="wrap situations__inner">
+          <h2 id="h-sit">¿Cuál es tu situación?</h2>
+          <ul>
+            <li><a href="#servicios" data-svc="peritaje">Dudo de la autenticidad de un documento</a></li>
+            <li><a href="#servicios" data-svc="ciber">Sospecho de un fraude o una suplantación digital</a></li>
+            <li><a href="#servicios" data-svc="fraude">Quiero proteger a mi empresa del fraude</a></li>
+            <li><a href="#impacto">Necesito capacitar a mi equipo</a></li>
+          </ul>
+        </div>
+      </nav>
     </section>
 
     <!-- ============ EVIDENCIA (demostración) ============ -->
